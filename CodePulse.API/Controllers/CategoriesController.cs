@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Mvc;
 using CodePulse.API.Models.DTO;
 using CodePulse.API.Models.Domain;
 using CodePulse.API.Data;
 using CodePulse.API.Repositories.Interface;
 
+=======
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+>>>>>>> 6297efd776b649db9cbcfcd4397c6e7526fdcb7b
 
 namespace CodePulse.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+<<<<<<< HEAD
 
   
     public class CategoriesController : ControllerBase
@@ -38,6 +44,14 @@ namespace CodePulse.API.Controllers
                 UrlHandle = category.UrlHandle
             };
             return Ok(response);
+=======
+    public class CategoriesController : ControllerBase
+    {
+        [HttpPost]
+        public async Task<IActionResult> CreateCategory()
+        {
+
+>>>>>>> 6297efd776b649db9cbcfcd4397c6e7526fdcb7b
         }
     }
 }
